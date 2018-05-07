@@ -1,0 +1,90 @@
+
+
+<!--===============================================================================================formControlName="password"-->  
+
+<!--====[disabled]="!myForm.valid"=========================================================================================== [formGroup]="myForm" (ngSubmit)="onSubmit()"-->
+  
+  
+
+<div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+  <div class="login100-form validate-form" >
+    <span class="login100-form-title p-b-37">
+      Vehicle Info
+    </span>
+
+
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+
+    <div class="wrap-input100 validate-input m-b-20 form-group">
+      <input class="input100" type="text" name="username" placeholder="Vehicle type - CAR" readonly>
+      <span class="focus-input100"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+        <input class="input100" type="text" name="pass" placeholder="username" formControlName="username" readonly >
+        <span class="focus-input100"></span>
+      </div>
+
+      <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+          <input class="input100" type="text" name="pass" placeholder="address" formControlName="address" readonly >
+          <span class="focus-input100"></span>
+        </div>
+  
+        <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+            <input class="input100" type="text" name="pass" placeholder="address" formControlName="adharNo" readonly >
+            <span class="focus-input100"></span>
+          </div>
+
+          <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+              <input class="input100" type="text" name="pass" placeholder="address" formControlName="drivingLNo" readonly >
+              <span class="focus-input100"></span>
+            </div>
+      
+
+            <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+                <input class="input100" type="text" name="pass" placeholder="address" formControlName="state" readonly >
+                <span class="focus-input100"></span>
+              </div>
+
+
+              <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+                  <input class="input100" type="text" name="pass" placeholder="address" formControlName="phoneNo" readonly >
+                  <span class="focus-input100"></span>
+                </div>
+          
+
+    <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+      <input class="input100" type="text" name="pass" placeholder="Vehicle no. - KA-ey12-0785" formControlName="vehicleNo" readonly >
+      <span class="focus-input100"></span>
+    </div>
+
+    <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+      <input class="input100" type="text" name="pass" formControlName="fee" placeholder="fee - 500₹" readonly >
+      <span class="focus-input100"></span>
+    </div>
+
+    <div class="container-login100-form-btn">
+   
+      <button class="login100-form-btn" type="submit"   >
+        Proceed
+      </button>
+
+    </div>
+
+  </form>
+    
+  </div>
+          
+</div>
+
+
+
+
+<div id="dropDownSelect1"></div> 
+
+
+
+
+<!--===============================================================================================-->
+
+

@@ -1,0 +1,56 @@
+
+
+<!--===============================================================================================-->  
+
+<!--===============================================================================================-->
+  
+  
+
+    <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+      <div class="login100-form validate-form" >
+        <span class="login100-form-title p-b-37">
+          Sign In
+        </span>
+
+
+        <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="wrap-input100 validate-input m-b-20 form-group" data-validate="Enter username or email">
+          <input class="input100" type="text" name="username" placeholder="username or email" formControlName="email">
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="wrap-input100 validate-input m-b-25 form-group" data-validate = "Enter password">
+          <input class="input100" type="password" name="pass" placeholder="password" formControlName="password">
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="container-login100-form-btn">
+       
+          <button class="login100-form-btn" type="submit"  [disabled]="!myForm.valid" >
+            Sign In
+          </button>
+
+        </div>
+
+      </form>
+        
+      </div>
+                <div class="row">
+                  <div class="col-md-offset-9 col-md-3">
+                  <input type="image" src="/assets/images/signup.png" class="img-fluid"  onclick="location.href = '/signup';"/>
+                  </div>
+                </div>
+      
+    </div>
+
+  
+  
+
+  <div id="dropDownSelect1"></div> 
+
+
+   
+  
+<!--===============================================================================================-->
+
+
